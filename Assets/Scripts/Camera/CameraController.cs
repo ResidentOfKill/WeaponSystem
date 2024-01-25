@@ -16,6 +16,10 @@ public class CameraController : MonoBehaviour
 
     private Vector2 _viewRotationInput;
 
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     private void FixedUpdate()
     {
         Rotation();
